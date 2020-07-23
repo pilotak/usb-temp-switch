@@ -14,7 +14,7 @@ pio run -t upload -e usb_temp_switch_v1
 ```
 or use compiled/downloaded FW with `AVRDUDE` _(don't forget to change the serial port number & fw path)_
 ```sh
-avrdude -v -p attiny85 -c arduino -P COM1 -e -D -U flash:w:firmware.hex:i
+avrdude -v -p attiny85 -c arduino -b 19200 -P COM1 -e -D -U flash:w:firmware.hex:i
 ```
 
 ## Version 2
